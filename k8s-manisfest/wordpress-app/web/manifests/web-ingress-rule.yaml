@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: wp.13.36.32.81.nip.io
+  - host: wp.35.181.115.140.nip.io
     http:
       paths:
       - path: /
