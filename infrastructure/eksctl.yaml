@@ -1,0 +1,23 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: mdu-workshop
+  region: eu-west-3
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.medium
+    desiredCapacity: 2
+    volumeSize: 10
+
+vpc:
+  id: "vpc-d4ad60bc"
+  subnets:
+    public:
+      eu-west-3a:
+        id: "subnet-74c22a1c"
+        cidr: "172.31.0.0/20"
+      eu-west-3b:
+        id: "subnet-8eeae9f5"
+        cidr: "172.31.16.0/20"
