@@ -2,7 +2,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: app-2048
   name: app-2048
   labels:
     app: app-2048
